@@ -12,9 +12,9 @@ def binary(elements,query):
              elif len(elements)==1:
                 return mid
          elif elements[mid]>query:
-             low=mid+1
-         elif elements[mid]<query:
              high=mid-1
+         elif elements[mid]<query:
+             low=mid+1
     return -1
     
 testcases=[{'input': {'cards': [13, 11, 10, 7, 4, 3, 1, 0], 'query': 7}, 'output': 3},
